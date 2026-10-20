@@ -83,7 +83,12 @@ SOURCE_WEB = """근거 자료: 이 대본은 작가가 WebSearch 로 기사를 �
 
 
 def _sha(path: Path) -> str:
-    return hashlib.sha1(path.read_bytes()).hexdigest()
+    """대본 본문(스키마 키)만의 해시. render/style 같은 뒤 공정 키가 바뀌어도 다시 검수하지 않는다."""
+    d = json.loads(path.read_text(encoding="utf-8"))
+    body = {k: d.get(k) for k in SCHEMA["properties"]}
+    body["sentences"] = [{k: v for k, v in s.items() if k in ("id", "text", "speaker", "emphasis", "visual")}
+                         for s in (body.get("sentences") or []) if isinstance(s, dict)]
+    return hashlib.sha1(json.dumps(body, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
 def relink(job: Path, old: list[dict], new: list[dict]) -> None:
@@ -170,10 +175,13 @@ def main() -> None:
     pre.parent.mkdir(exist_ok=True)
     if not pre.exists():  # 원본은 한 번만 보관
         pre.write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
-    # 뒤 공정이 붙인 것 보존: 화풍, 본문·visual 이 그대로인 문장의 다듬은 프롬프트·선택 기록·이미지
-    for k in ("style", "created"):
-        if k in script:
-            fixed[k] = script[k]
+    # 뒤 공정이 붙인 것 보존: render(프리셋)·style·created 등 스키마 밖 최상위 키 전부, 그리고
+    # 본문·visual 이 그대로인 문장의 다듬은 프롬프트·선택 기록·이미지
+    for k, v in script.items():
+        if k not in SCHEMA["properties"] and k not in fixed:
+            fixed[k] = v
+    if "created" in script:
+        fixed["created"] = script["created"]
     old_by_text = {s["text"]: s for s in script["sentences"]}
     for s in fixed["sentences"]:
         o = old_by_text.get(s["text"])
