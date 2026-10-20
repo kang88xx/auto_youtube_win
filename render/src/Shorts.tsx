@@ -23,9 +23,11 @@ const bodyFont = F.pretendard;
 const W = 1080;
 
 // ---------- 숫자 파싱: "5조", "70%", "1년짜리", "3%" ----------
-const NUM_RE = /(\d+(?:[.,]\d+)?)\s*(조|억|만|천|%|년|개월|일|달러|원|배|명|개|위|시간|분)?/;
-const parseNumber = (text: string) => {
-  const m = text.match(NUM_RE);
+const NUM_RE = /(\d+(?:[.,]\d+)?)\s*(조|억|만|천|%|년|개월|개|월|일|달러|원|배|명|위|시간|분|포인트|p)?/;
+// 강조 어절에 숫자가 있으면 그것을, 없으면 문장의 첫 숫자를 카드로 띄운다 ("19일까지 28% 빠졌고" + 강조 "28%" → 28%)
+const parseNumber = (text: string, emphasis?: string[]) => {
+  const e = (emphasis ?? []).find((x) => /\d/.test(x));
+  const m = (e ? e.match(NUM_RE) : null) ?? text.match(NUM_RE);
   if (!m) return null;
   const value = parseFloat(m[1].replace(/,/g, ""));
   if (Number.isNaN(value)) return null;
@@ -282,7 +284,7 @@ export const Shorts: React.FC<ShortsProps> = ({ jobId, script, durations, theme:
       {tl.map((item, idx) => {
         const s = item.sentence;
         const assetSrc = s.asset ? staticFile(`${base}/${s.asset}`) : null;
-        const num = cards ? parseNumber(s.text) : null;
+        const num = cards ? parseNumber(s.text, s.emphasis) : null;
         const keyword = cards && !num && s.emphasis && s.emphasis.length > 0 ? s.emphasis[0] : null;
         return (
           <Sequence
