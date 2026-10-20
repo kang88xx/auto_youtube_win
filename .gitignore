@@ -12,3 +12,4 @@ __pycache__/
 .omc/
 jobs/_batch/*.log
 jobs/_batch/nohup.out
+jobs/v[0-9][0-9]-*/
