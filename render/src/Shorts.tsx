@@ -13,23 +13,12 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { loadFont } from "@remotion/fonts";
-import {
-  Sentence,
-  ShortsProps,
-  Theme,
-  buildTimeline,
-  defaultTheme,
-} from "./types";
+import { Caption, CaptionStyle, showsCards } from "./captions";
+import { F, fontsReady } from "./fonts";
+import { ShortsProps, Theme, buildTimeline, defaultTheme } from "./types";
 
-// 로컬 폰트 (public/fonts). 구글폰트 한글 서브셋은 청크가 많아 로딩 타임아웃이 나서 로컬로 고정.
-const displayFont = "Black Han Sans";
-const bodyFont = "Pretendard";
-const fontsReady = Promise.all([
-  loadFont({ family: displayFont, url: staticFile("fonts/BlackHanSans-Regular.ttf"), weight: "400" }),
-  loadFont({ family: bodyFont, url: staticFile("fonts/Pretendard-Bold.woff2"), weight: "700" }),
-  loadFont({ family: bodyFont, url: staticFile("fonts/Pretendard-Black.woff2"), weight: "900" }),
-]);
+const displayFont = F.blackHan;
+const bodyFont = F.pretendard;
 
 const W = 1080;
 
@@ -90,17 +79,18 @@ const ShapesBackground: React.FC<{ theme: Theme }> = ({ theme }) => {
 // ---------- 전체 배경 소스 (이미지/영상) + 어둡게 ----------
 const isVideo = (p: string) => /\.(mp4|mov|webm|m4v)$/i.test(p);
 
-const MediaBackground: React.FC<{ src: string; durFrames: number; idx: number }> = ({
+const MediaBackground: React.FC<{ src: string; durFrames: number; idx: number; light: boolean }> = ({
   src,
   durFrames,
   idx,
+  light,
 }) => {
   const frame = useCurrentFrame();
   const fade = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" });
   const scale = interpolate(frame, [0, durFrames], idx % 2 ? [1.12, 1.0] : [1.0, 1.12]);
   const pan = interpolate(frame, [0, durFrames], [0, idx % 2 ? -30 : 30]);
   return (
-    <AbsoluteFill style={{ opacity: fade, background: "#000" }}>
+    <AbsoluteFill style={{ opacity: fade, background: light ? "#f4efe6" : "#000" }}>
       <AbsoluteFill style={{ transform: `scale(${scale}) translateX(${pan}px)` }}>
         {isVideo(src) ? (
           <OffthreadVideo src={src} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -110,8 +100,9 @@ const MediaBackground: React.FC<{ src: string; durFrames: number; idx: number }>
       </AbsoluteFill>
       <AbsoluteFill
         style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 25%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.82) 78%, rgba(0,0,0,0.9) 100%)",
+          background: light
+            ? "linear-gradient(180deg, rgba(255,250,240,0.35) 0%, rgba(255,250,240,0.0) 25%, rgba(255,250,240,0.05) 50%, rgba(255,250,240,0.55) 78%, rgba(255,250,240,0.7) 100%)"
+            : "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 25%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.82) 78%, rgba(0,0,0,0.9) 100%)",
         }}
       />
     </AbsoluteFill>
@@ -125,7 +116,7 @@ const TopBar: React.FC<{ theme: Theme }> = ({ theme }) => {
   const { durationInFrames } = useVideoConfig();
   const p = frame / durationInFrames;
   const logo = 88;
-  const c = "rgba(255,255,255,0.75)";
+  const c = theme.dark === false ? "rgba(20,16,12,0.7)" : "rgba(255,255,255,0.75)";
   return (
     <>
       <div style={{ position: "absolute", top: 0, left: 0, height: 10, width: W * p, background: theme.accent }} />
@@ -265,114 +256,17 @@ const KeywordCard: React.FC<{ word: string; theme: Theme }> = ({ word: rawWord, 
   );
 };
 
-// ---------- 키네틱 자막 ----------
-const hasDigit = (w: string) => /\d/.test(w);
-
-const Caption: React.FC<{ sentence: Sentence; durFrames: number; theme: Theme; isHook: boolean }> = ({
-  sentence,
-  durFrames,
-  theme,
-  isHook,
-}) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const isQuote = sentence.speaker === "quote";
-  const words = sentence.text.split(/\s+/).filter(Boolean);
-  const emph = sentence.emphasis ?? [];
-  const speakFrames = durFrames * 0.85;
-  const perWord = speakFrames / Math.max(words.length, 1);
-  const fontSize = isHook ? 88 : 74;
-  const exit = interpolate(frame, [durFrames - 5, durFrames + 2], [1, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: 1120,
-        left: 72,
-        width: W - 144,
-        height: 560,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        opacity: exit,
-      }}
-    >
-      {isQuote ? (
-        <div
-          style={{
-            position: "absolute",
-            top: -40,
-            left: 0,
-            fontFamily: displayFont,
-            fontSize: 220,
-            color: theme.accent,
-            opacity: 0.8,
-            lineHeight: 1,
-          }}
-        >
-          “
-        </div>
-      ) : null}
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "6px 18px",
-          textAlign: "center",
-          fontFamily: isHook ? displayFont : bodyFont,
-          fontWeight: 900,
-          fontStyle: isQuote ? "italic" : "normal",
-          fontSize,
-          lineHeight: 1.3,
-          color: isQuote ? "#ffe9ec" : theme.text,
-          textShadow: "0 4px 24px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9)",
-          wordBreak: "keep-all",
-        }}
-      >
-        {words.map((w, i) => {
-          const start = i * perWord;
-          const s = spring({
-            frame: frame - start,
-            fps,
-            config: { damping: 14, stiffness: 160, mass: 0.6 },
-            durationInFrames: 14,
-          });
-          const isEmph = emph.some((e) => w.includes(e) || e.includes(w));
-          const isNum = hasDigit(w);
-          return (
-            <span
-              key={i}
-              style={{
-                display: "inline-block",
-                color: isEmph || isNum ? theme.accent : undefined,
-                opacity: s,
-                transform: `translateY(${(1 - s) * 30}px) scale(${0.8 + 0.2 * s})`,
-                fontFamily: isNum ? displayFont : undefined,
-                fontSize: isNum ? fontSize * 1.1 : undefined,
-              }}
-            >
-              {w}
-            </span>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
 // ---------- 본체 ----------
-export const Shorts: React.FC<ShortsProps> = ({ jobId, script, durations, theme: themeOverride }) => {
+export const Shorts: React.FC<ShortsProps> = ({ jobId, script, durations, theme: themeOverride, caption }) => {
   const { fps } = useVideoConfig();
   const [fontHandle] = React.useState(() => delayRender("fonts"));
   React.useEffect(() => {
     fontsReady.then(() => continueRender(fontHandle));
   }, [fontHandle]);
-  const theme: Theme = { ...defaultTheme, ...(themeOverride ?? {}) };
+  const theme: Theme = { ...defaultTheme, ...(script?.render?.theme ?? {}), ...(themeOverride ?? {}) };
+  const captionStyle: CaptionStyle = caption ?? script?.render?.caption ?? "kinetic";
+  const cards = showsCards(captionStyle);
+  const light = theme.dark === false;
   if (!script || !durations) {
     return (
       <AbsoluteFill style={{ background: "#000", color: "#fff", fontSize: 40, padding: 80 }}>
@@ -388,8 +282,8 @@ export const Shorts: React.FC<ShortsProps> = ({ jobId, script, durations, theme:
       {tl.map((item, idx) => {
         const s = item.sentence;
         const assetSrc = s.asset ? staticFile(`${base}/${s.asset}`) : null;
-        const num = parseNumber(s.text);
-        const keyword = !num && s.emphasis && s.emphasis.length > 0 ? s.emphasis[0] : null;
+        const num = cards ? parseNumber(s.text) : null;
+        const keyword = cards && !num && s.emphasis && s.emphasis.length > 0 ? s.emphasis[0] : null;
         return (
           <Sequence
             key={item.id}
@@ -398,14 +292,14 @@ export const Shorts: React.FC<ShortsProps> = ({ jobId, script, durations, theme:
             name={`${item.id} ${s.text.slice(0, 18)}`}
           >
             {assetSrc ? (
-              <MediaBackground src={assetSrc} durFrames={item.durFrames} idx={idx} />
+              <MediaBackground src={assetSrc} durFrames={item.durFrames} idx={idx} light={light} />
             ) : (
               <ShapesBackground theme={theme} />
             )}
             <Audio src={staticFile(`${base}/audio/${item.id}.wav`)} />
             {num ? <NumberCard value={num.value} unit={num.unit} raw={num.raw} theme={theme} /> : null}
             {keyword ? <KeywordCard word={keyword} theme={theme} /> : null}
-            <Caption sentence={s} durFrames={item.durFrames} theme={theme} isHook={idx === 0} />
+            <Caption style={captionStyle} sentence={s} durFrames={item.durFrames} theme={theme} isHook={idx === 0} title={script.title} />
           </Sequence>
         );
       })}

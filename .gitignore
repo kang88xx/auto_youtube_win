@@ -5,6 +5,7 @@ tools/
 render/node_modules/
 render/public/jobs/
 jobs/*/render/
+jobs/*/assets/cand/
 ._*
 .DS_Store
 __pycache__/

@@ -1,0 +1,445 @@
+{
+  "title": "오늘의 이슈 · 반도체",
+  "hook": "삼성 낸드의 약 40%가 중국 시안에서 나옵니다.",
+  "titles": [
+    "삼성 낸드 40%, 허가는 1년짜리였다",
+    "VEU 철회 뒤 중국 투자 68% 늘린 이유",
+    "SK하이닉스 2027년 허가, 아직 없다"
+  ],
+  "description": "미국이 2025년 8월 삼성·SK하이닉스 중국 공장의 VEU 지위를 철회하고 연간 허가 체계로 바꾼 뒤, 두 회사는 오히려 중국 투자를 늘렸습니다. 그런데 2026년 10월 15일 기준 SK하이닉스 다롄 공장의 2027년분 허가는 아직 나오지 않았습니다. 시안·우시·다롄 공장이 매년 미국의 승인에 달린 구조를 정리했습니다.\n\n출처:\nhttps://www.metroseoul.co.kr/article/20261019500397\nhttps://daily.hankooki.com/news/articleView.html?idxno=1415281\nhttps://news.sbs.co.kr/english/article.do?news_id=N1008799275\nhttps://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/\nhttps://www.koreajoongangdaily.com/business/samsung-sk-hynix-pour-fresh-investment-into-aging-china-factories-despite-us-curbs/12832376\nhttps://finance.yahoo.com/news/samsung-wins-us-annual-approval-041415683.html\nhttps://www.khan.co.kr/article/202512302047015\nhttps://www.govinfo.gov/content/pkg/FR-2025-09-02/html/2025-16735.htm\nhttps://www.koreaherald.com/article/10565077\nhttps://www.ddaily.co.kr/page/view/2025082923561944620",
+  "tags": [
+    "반도체",
+    "삼성전자",
+    "SK하이닉스",
+    "수출규제",
+    "VEU",
+    "미국 상무부",
+    "시안 공장",
+    "다롄 공장",
+    "낸드",
+    "솔리다임",
+    "미중 갈등",
+    "쇼츠뉴스"
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "삼성 낸드의 약 40%가 중국 시안에서 나옵니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%가"
+      ],
+      "visual": "Vast semiconductor fab cleanroom in Xi'an China, long rows of NAND wafer processing tools, cool blue lighting, wide angle, news illustration style, no text or logos",
+      "asset": "assets/s01.jpg",
+      "visual_final": "Vast semiconductor cleanroom seen from a high wide angle, endless rows of wafer processing tools under cool blue overhead lights, a lone technician in a white bunny suit walking far down the aisle, glossy empty floor filling the lower third of the frame.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Centered worker between symmetric rows of fab equipment reads instantly as a NAND fab; subject mid-frame, lower third is calm reflective floor. Candidate 1 is similar but busier and less tight."
+      }
+    },
+    {
+      "id": "s02",
+      "text": "그런데 그 공장 장비 반입 허가가 1년짜리거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "1년짜리거든요"
+      ],
+      "visual": "Official export license document on a desk beside a calendar showing a single year, stamp and pen nearby, dim office lighting, tense mood, editorial illustration, no readable text",
+      "asset": "assets/s02.jpg",
+      "visual_final": "Close-up of a single stamped permit sheet lying on a dark wooden desk, a brass rubber stamp and fountain pen beside it, a wall calendar out of focus behind with one month torn away, dim amber desk lamp, blank desk surface in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Both permit papers have AI-garbled text, but candidate 0's large headline 'AUTICE PERPIOT YERBOIT' is blatantly fake across the middle. Candidate 1 at least reads 'PERMIT', the garble is small, and the paper sits where the caption will partly cover it."
+      }
+    },
+    {
+      "id": "s03",
+      "text": "미국은 왜 매년 다시 심사하는 걸까요?",
+      "speaker": "main",
+      "emphasis": [
+        "매년"
+      ],
+      "visual": "Large magnifying glass hovering over a shipping crate of chipmaking equipment at a port, red white and blue tones in background, dramatic spotlight, news graphic style, no text",
+      "asset": "assets/s03.jpg",
+      "visual_final": "Night harbor, a huge crane hook lowering a wooden crate of chipmaking equipment under a single harsh spotlight, customs inspector silhouette on the quay with a flashlight beam cutting the fog, calm dark water across the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Container hanging over a ship under a spotlight with an inspector — centered mid-frame, suggests scrutiny/approval of a shipment; lower third is calm dark water. Candidate 1 pushes the subject to the left edge."
+      }
+    },
+    {
+      "id": "s04",
+      "text": "시작은 2022년 10월이었습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2022년"
+      ],
+      "visual": "Washington DC government building exterior at dusk, autumn leaves on the ground, long shadows, serious documentary tone, muted colors, editorial illustration, no text",
+      "asset": "assets/s04.jpg",
+      "visual_final": "Neoclassical government building with white columns at dusk, autumn leaves drifting across an empty stone plaza, long shadows, low eye-level shot from the plaza edge, muted blue sky with a thin amber horizon, smooth paving stones occupying the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Government-style building with lit windows and fallen autumn leaves (October mood) fills the upper/middle; lower third is empty wet pavement for the caption. Candidate 0 wastes the upper third on blank sky."
+      }
+    },
+    {
+      "id": "s05",
+      "text": "첨단 장비의 대중 수출을 허가제로 묶었거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "허가제로"
+      ],
+      "visual": "Cargo containers of high-tech machinery wrapped in red tape and padlocks on a dock, overcast sky, symbolic export restriction, editorial illustration, no text or logos",
+      "asset": "assets/s05.jpg",
+      "visual_final": "Stacked steel shipping containers on a dock wrapped in thick red customs straps and heavy padlocks, overcast grey sky, low angle looking up at the stack, a single gull flying overhead, wet empty concrete pier in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Candidate 0 has obvious fake lettering on the container doors ('TO 6', 'LUSTIN ENCUL'). Candidate 1's red lockdown straps and padlocks convey 'export restricted' with only tiny indistinct markings; no readable garble."
+      }
+    },
+    {
+      "id": "s06",
+      "text": "삼성·SK는 2023년 10월 VEU 지위를 받았죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2023년"
+      ],
+      "visual": "Green checkmark badge glowing over a stylized factory silhouette, soft morning light, sense of relief and approval, clean news infographic style, no text",
+      "asset": "assets/s06.jpg",
+      "visual_final": "Polished chrome factory gate swinging open at sunrise, soft golden light spilling through onto a clean access road, a guard booth with its barrier raised, mist rising from the asphalt, blurred fab silhouette behind, empty tarmac filling the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Symmetrical factory gate opened onto a sunrise says 'permission granted' at a glance; gate centered in upper/middle, lower third is calm wet asphalt. Candidate 1 is off-center with a distracting guard booth and chimney."
+      }
+    },
+    {
+      "id": "s07",
+      "text": "미국산 장비를 개별 허가 없이 들일 수 있던 제도죠.",
+      "speaker": "main",
+      "emphasis": [
+        "개별"
+      ],
+      "visual": "Open factory gate with trucks carrying crated semiconductor equipment rolling in freely, bright daylight, smooth uninterrupted flow, flat vector news illustration, no text or logos",
+      "asset": "assets/s07.jpg",
+      "visual_final": "Convoy of flatbed trucks carrying shrink-wrapped equipment crates rolling smoothly through an open industrial checkpoint, bright midday light, telephoto compression from the roadside, blue sky and distant fab roofs, empty asphalt lane in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Clean convoy of wrapped equipment centered mid-frame, no artifacts; cand1 has a detached-looking shadow and an orange lens-flare blob in the lower third."
+      }
+    },
+    {
+      "id": "s08",
+      "text": "그런데 2025년 8월 29일, 상무부가 움직였습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "8월"
+      ],
+      "visual": "Government press room with empty podium and microphones, rows of empty chairs, harsh fluorescent light, moment before an announcement, editorial illustration, no text",
+      "asset": "assets/s08.jpg",
+      "visual_final": "Empty government press room, a wooden podium with a cluster of microphones under harsh fluorescent light, rows of vacant chairs facing it, heavy curtains behind, shot from the back aisle, dark carpet floor across the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Podium with microphones sits mid-frame and the lower third is plain carpet, leaving room for the caption; cand1's lower third is cluttered with chairs."
+      }
+    },
+    {
+      "id": "s09",
+      "text": "\"바이든 시대 허점\"",
+      "speaker": "quote",
+      "emphasis": [
+        "허점\""
+      ],
+      "visual": "Cracked concrete wall with light leaking through a hole, gloved hand reaching to seal it, dramatic contrast lighting, metaphor for closing a loophole, editorial art, no text",
+      "asset": "assets/s09.jpg",
+      "visual_final": "Macro shot of a cracked grey concrete wall with a thin shaft of amber light leaking through a hole, a gloved hand pressing a steel plate over the gap, dust particles in the beam, high contrast, plain dark wall surface in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Glowing crack and the hand covering it are centered with a calm wall below; glove and fingers look natural. cand1 pushes the glow to the top and the arm into the lower third."
+      }
+    },
+    {
+      "id": "s10",
+      "text": "상무부는 VEU를 이렇게 부르며 철회했습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "철회했습니다"
+      ],
+      "visual": "Green approval badge being torn off a factory blueprint, ragged paper edges, cold grey office lighting, decisive mood, news illustration, no readable text",
+      "asset": "assets/s10.jpg",
+      "visual_final": "Overhead view of a factory blueprint on a steel drafting table, a green wax seal being peeled away leaving a ragged torn circle, a chrome letter opener resting nearby, cold grey office window light, empty table edge in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Broken wax seal on the document reads as 'revoked' at a glance, less garbled fine print, and the lower third is quiet; cand1 has more visible fake lettering and odd tools."
+      }
+    },
+    {
+      "id": "s11",
+      "text": "확장·고도화용 장비는 허가 안 준다는 방침이었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "허가"
+      ],
+      "visual": "Red barrier blocking new machines from entering an expansion wing of a fab, existing production line still running behind, split lighting, flat news illustration, no text",
+      "asset": "assets/s11.jpg",
+      "visual_final": "Split industrial hall interior, left side a working production line glowing blue with moving robotic arms, right side a sealed red steel shutter with new crates stacked outside it, overhead spotlights, polished dark floor across the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Coherent single scene: robot line on one side, closed red shutter blocking the equipment crates on the other, with an empty floor for the caption. cand1's hard split-screen seam looks artificial."
+      }
+    },
+    {
+      "id": "s12",
+      "text": "대상은 삼성 시안과 SK 우시·다롄 공장입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "시안과"
+      ],
+      "visual": "Three distinct semiconductor factory complexes placed across an abstract map of eastern China, clean blue daylight, informative infographic atmosphere, editorial illustration, no labels or text",
+      "asset": "assets/s12.jpg",
+      "visual_final": "Aerial drone view at golden hour of three separate sprawling fab complexes on a stylized relief map of coastal and inland terrain, soft clouds casting shadows, clean blue daylight, rivers and plains, calm flat farmland in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "No garbled text; aerial fab-site shot with calm lower-third terrain. cand1 has fake watermark lettering in the bottom-left corner, which fails the artifact check."
+      }
+    },
+    {
+      "id": "s13",
+      "text": "규칙은 2025년 12월 31일 발효됐습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "12월"
+      ],
+      "visual": "Desk calendar flipped to the last day of December beside a thick federal rulebook, winter window light, quiet countdown atmosphere, editorial illustration, no readable text",
+      "asset": "assets/s13.jpg",
+      "visual_final": "Thick bound rulebook with a dark leather cover lying beside a desk calendar on its final page, frost on a window behind, pale winter light, a cold cup of tea, shallow depth of field, bare desk surface in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Calendar is softly blurred so no garbled text; candidate 1 has pseudo-lettering on the calendar. Dark book keeps the lower third calm for caption."
+      }
+    },
+    {
+      "id": "s14",
+      "text": "그런데 발효 직전, 2026년분 연간 허가가 나왔죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2026년분"
+      ],
+      "visual": "Envelope with an approval seal arriving on a desk at night, wall clock near midnight, warm lamp light, last-minute relief, news illustration, no readable text",
+      "asset": "assets/s14.jpg",
+      "visual_final": "Night office, a sealed envelope with a red wax seal dropping into a wooden in-tray under a warm brass lamp, round wall clock showing almost midnight in soft blur behind, rain on dark window, empty desk in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Visible clock plus sealed envelope reads instantly as 'permit issued just before deadline'; clock numerals are intact, envelope sits mid-frame, lower third is dark desk."
+      }
+    },
+    {
+      "id": "s15",
+      "text": "\"최악의 시나리오는 피했다\"",
+      "speaker": "quote",
+      "emphasis": [
+        "피했다\""
+      ],
+      "visual": "Businessperson silhouette exhaling by a window overlooking a fab complex at dawn, soft golden light, relief mood, back to camera no face visible, editorial illustration",
+      "asset": "assets/s15.jpg",
+      "visual_final": "Back view of a suited figure standing at a floor-to-ceiling window, exhaling slowly, overlooking a vast fab complex at dawn with soft golden mist, reflection faint on glass, no face visible, dark carpeted floor in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "Silhouetted executive at window over hazy industrial skyline conveys relief; subject sits higher in frame and the lower third is darker floor, leaving room for the quote."
+      }
+    },
+    {
+      "id": "s16",
+      "text": "그런데 규제 속에서도 2025년 중국 투자는 늘었습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2025년"
+      ],
+      "visual": "Rising bar chart built from stacked wafer shipping boxes in front of a large Chinese factory, bright daylight, confident upward momentum, infographic style, no text",
+      "asset": "assets/s16.jpg",
+      "visual_final": "Towering stacks of wafer shipping boxes rising in ascending steps in a sunlit warehouse yard, each column taller than the last, a forklift placing another box on top, bright daylight, clear sky, smooth concrete yard across the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Candidate 0 has fake lettering on the boxes (RUMALL etc.); candidate 1's tall stack and forklift show growing volume with no readable text and an empty concrete lower third."
+      }
+    },
+    {
+      "id": "s17",
+      "text": "시안 투자가 4654억 원, 약 68% 늘었거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "4654억"
+      ],
+      "visual": "Construction cranes upgrading a massive fab in Xi'an, workers in cleanroom suits installing new tools, afternoon sun, sense of scale and investment, editorial illustration, no text",
+      "asset": "assets/s17.jpg",
+      "visual_final": "Construction cranes lifting steel modules onto an expanding fab building, workers in hard hats small on scaffolding, afternoon sun flaring behind the structure, dust in the air, wide low angle from the site road, graded dirt ground in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Candidate 0's crane load carries garbled text; candidate 1 has clean cranes and a rising structure at sunrise, matching the big investment increase with a calm lower third."
+      }
+    },
+    {
+      "id": "s18",
+      "text": "SK하이닉스 다롄도 4406억 원, 52% 증가였죠.",
+      "speaker": "main",
+      "emphasis": [
+        "4406억"
+      ],
+      "visual": "Coastal industrial site in Dalian with a large memory fab and a second building under construction, sea haze, late afternoon light, news illustration, no text or logos",
+      "asset": "assets/s18.jpg",
+      "visual_final": "Coastal industrial site with a long memory fab beside a second building skeleton under construction, sea haze and gulls, late afternoon amber light on the water, telephoto view from across a bay, calm grey sea surface filling the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Foggy industrial plant matches a fab investment better than a cargo ship; cool haze matches s15/s17 palette and the water below is calm for caption."
+      }
+    },
+    {
+      "id": "s19",
+      "text": "그런데 10월 15일, 로이터 보도가 나왔습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "10월"
+      ],
+      "visual": "Newsroom monitor glowing with a breaking story layout, blurred papers and coffee cup on the desk, blue screen light, investigative mood, editorial illustration, no readable text",
+      "asset": "assets/s19.jpg",
+      "visual_final": "Dim newsroom at night, a single desk monitor glowing with an abstract blurred layout of color blocks, scattered papers and a steaming coffee mug, blue screen light on an empty chair, out-of-focus desks behind, dark desk edge in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "뉴스 사이트 화면이 뜬 모니터가 '보도'를 바로 읽히게 함. 0은 포스트잇 화면이라 보도와 무관. 하단 1/3 어두운 책상으로 자막 여유 있음."
+      }
+    },
+    {
+      "id": "s20",
+      "text": "SK하이닉스가 다롄 Mod B에 장비를 더 넣으려 한다죠.",
+      "speaker": "main",
+      "emphasis": [
+        "Mod"
+      ],
+      "visual": "Crated semiconductor tools waiting outside a sealed empty fab module door, idle forklift, grey overcast light, anticipation and waiting, editorial illustration, no text or logos",
+      "asset": "assets/s20.jpg",
+      "visual_final": "Row of wooden equipment crates waiting on pallets outside a sealed grey steel fab module door, an idle yellow forklift parked beside them, overcast flat light, puddles on the loading dock, wet empty concrete across the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "지게차가 나무 크레이트를 공장 문 쪽으로 옮기는 구도가 '장비를 더 넣는다'를 전달. 1은 정적인 나열이라 동작감 약함. 하단은 젖은 바닥으로 차분."
+      }
+    },
+    {
+      "id": "s21",
+      "text": "미국 낸드 공장 건설과 연계했다는 소식통 2명의 말이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2명의"
+      ],
+      "visual": "Two anonymous silhouettes behind frosted glass near a reporter's desk, a rural American plot with factory blueprint on the table, subdued lighting, cautious mood, no faces or text",
+      "asset": "assets/s21.jpg",
+      "visual_final": "Two blurred human silhouettes behind frosted glass in a dim corridor, in the foreground a notebook and a rolled blueprint on a reporter's desk, a small desk lamp casting amber light, no faces visible, plain dark desk in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "유리 너머 두 실루엣이 상단·중앙에 크게 잡혀 '소식통 2명'이 즉시 읽힘. 0은 인물이 작고 복도 원근에 묻힘. 인공물 없음."
+      }
+    },
+    {
+      "id": "s22",
+      "text": "\"미국 정부와 긴밀히 협의\"",
+      "speaker": "quote",
+      "emphasis": [
+        "협의\""
+      ],
+      "visual": "Two negotiators' hands across a conference table with documents and small flags of Korea and the United States, warm lamp light, diplomatic tone, no faces or readable text",
+      "asset": "assets/s22.jpg",
+      "visual_final": "Two pairs of hands in dark suits across a long polished conference table, one sliding a leather document folder toward the other, two matching glasses of water, warm lamp light, soft blurred flags without detail in the far background, glossy empty tabletop in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "국기 앞 악수가 '긴밀히 협의'를 한눈에 전달, 손 형태 자연스러움. 0은 유리잔이 서류와 겹쳐 어색하고 얼굴이 잘림. 하단은 반사 테이블로 자막 공간 확보."
+      }
+    },
+    {
+      "id": "s23",
+      "text": "SK하이닉스는 생산능력 확대는 아니라고 선을 그었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "확대는"
+      ],
+      "visual": "Factory floor plan with a firm red line drawn around the existing area, ruler and pen resting on the paper, crisp desk lighting, clarification mood, news illustration, no text",
+      "asset": "assets/s23.jpg",
+      "visual_final": "Factory floor plan spread on a desk, a firm red marker line drawn tightly around the existing production area, a steel ruler and uncapped red pen resting on the paper, crisp white desk lighting from above, blank paper margin in the lower third.",
+      "asset_pick": {
+        "choice": 0,
+        "of": 2,
+        "reason": "도면 위 붉은 사각 경계선이 '선을 그었다'를 직관적으로 표현. 1은 붉은 선이 복잡해 의미가 흐림. 하단도 연한 도면이라 자막 가독성 양호."
+      }
+    },
+    {
+      "id": "s24",
+      "text": "그런데 2027년분 다롄 허가는 15일 기준 아직입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2027년분"
+      ],
+      "visual": "Empty inbox tray on a government desk, calendar page turning toward a new year, cold blue office light, waiting tension, editorial art, no readable text",
+      "asset": "assets/s24.jpg",
+      "visual_final": "Empty grey wire inbox tray on a government office desk, a page-a-day calendar block beside it with a page mid-flip, cold blue window light, a ticking clock blurred behind, dust motes, bare laminate desk surface across the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "0은 달력 상단 글자가 깨진 AI 텍스트라 탈락. 1은 시계와 미결 서류함이 '아직 허가 대기 중'을 전달, 톤도 다른 장면의 청색 계열과 일치."
+      }
+    },
+    {
+      "id": "s25",
+      "text": "낸드 40%의 시안도, 다롄도 매년 허가에 달린 셈이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "40%의"
+      ],
+      "visual": "Two large fab buildings hanging from a single thread above an hourglass, dramatic spotlight on dark background, fragile balance metaphor, news illustration style, no text",
+      "asset": "assets/s25.jpg",
+      "visual_final": "Two miniature fab buildings suspended on a single fraying thread above a large glass hourglass with sand running, dramatic amber spotlight from above on a black void background, slight sway in the thread, empty dark floor in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Two lit factory buildings stacked on the hourglass read clearly as 'plants hanging on a yearly timer'; cool blue palette matches the s26 night scenes. Candidate 0's houses are tiny and indistinct with an odd knot artifact on the string."
+      }
+    },
+    {
+      "id": "s26",
+      "text": "연말 2027년 허가가 나올지, 다음 편에서 짚습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2027년"
+      ],
+      "visual": "Snowy December night over a sprawling fab complex, one office window lit, distant city lights, suspenseful cliffhanger mood, cinematic illustration, no text",
+      "asset": "assets/s26.jpg",
+      "visual_final": "Snowy December night over a sprawling fab complex, falling snow caught in a single lit office window high in a dark tower, distant city lights twinkling on the horizon, deep blue sky, untouched snowfield in the lower third.",
+      "asset_pick": {
+        "choice": 1,
+        "of": 2,
+        "reason": "Clean tower with a single lit window in the upper-right, no visible text artifacts, and a calm snowy lower third for the caption. Candidate 0 has a faint garbled watermark-like text in the bottom-right corner."
+      }
+    }
+  ],
+  "topic": "미국 반도체 수출 규제와 삼성·SK하이닉스 중국 공장",
+  "created": "2026-10-21",
+  "style": "Cinematic photo-real editorial still, palette of steel blue, cold slate grey and a single warm amber accent, hard directional key light with soft haze, 35mm lens, fine film grain, tense sober mood"
+}

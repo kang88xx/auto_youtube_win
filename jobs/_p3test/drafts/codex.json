@@ -1,0 +1,231 @@
+{
+  "title": "오늘의 이슈 · 반도체",
+  "hook": "삼성 낸드 약 40%, 중국 시안에서 나옵니다.",
+  "titles": [
+    "삼성 낸드 40%, 중국 공장의 고민",
+    "2026년 허가 받은 삼성·SK, 다음은?",
+    "장비는 허용, 고도화는 불허? 삼성·SK"
+  ],
+  "description": "삼성 낸드 생산량 약 40%를 담당하는 시안 공장, 미국의 장비 수출 규제가 중요한 이유를 짚습니다. VEU 종료와 연간 승인 체계, 로이터의 다롄 장비 반입 보도와 SK하이닉스 입장을 정리했습니다. 다롄의 2027년분 허가 미발급은 2026년 10월 15일 기준입니다.\n출처:\nhttps://www.metroseoul.co.kr/article/20261019500397\nhttps://daily.hankooki.com/news/articleView.html?idxno=1415281\nhttps://www.khan.co.kr/article/202512302047015\nhttps://www.govinfo.gov/content/pkg/FR-2025-09-02/html/2025-16735.htm",
+  "tags": [
+    "반도체",
+    "미국수출규제",
+    "삼성전자",
+    "SK하이닉스",
+    "중국공장",
+    "시안",
+    "우시",
+    "다롄",
+    "낸드",
+    "VEU"
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "삼성 낸드 약 40%, 중국 시안에서 나옵니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%"
+      ],
+      "visual": "A sprawling semiconductor factory in Xian, China, with silicon wafers in the foreground, cool dawn lighting, serious industrial atmosphere, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s02",
+      "text": "이 공장의 장비 반입, 왜 미국이 결정할까요?",
+      "speaker": "main",
+      "emphasis": [
+        "미국"
+      ],
+      "visual": "A semiconductor equipment crate waiting at a Chinese factory checkpoint, distant American government architecture reflected in glass, dramatic side lighting, uncertain mood, news illustration, no text or logos."
+    },
+    {
+      "id": "s03",
+      "text": "2022년, 미국이 대중 장비 규제를 도입했죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2022년"
+      ],
+      "visual": "Advanced chipmaking machinery behind a controlled export gate at an American cargo terminal, cold overhead lighting, restrained tense atmosphere, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s04",
+      "text": "삼성·SK하이닉스는 1년 유예를 받았습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "1년"
+      ],
+      "visual": "Two semiconductor equipment shipments passing through a temporarily open cargo checkpoint, warm light beyond steel barriers, cautious relief, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s05",
+      "text": "2023년엔 두 회사가 VEU 지위를 받았죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2023년"
+      ],
+      "visual": "Two unmarked semiconductor factories beside approved shipping folders on a customs desk, balanced daylight, orderly reassuring atmosphere, editorial news illustration, no readable text, logos, or recognizable faces."
+    },
+    {
+      "id": "s06",
+      "text": "미국산 장비를 개별 허가 없이 들였거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "개별 허가 없이"
+      ],
+      "visual": "Sealed chipmaking equipment crates moving smoothly into a Chinese cleanroom loading bay, bright white industrial lighting, efficient calm atmosphere, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s07",
+      "text": "그런데 2025년 말, VEU 지위가 끝났습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2025년 말"
+      ],
+      "visual": "An open factory shipping lane narrowing into an inspection checkpoint, semiconductor machinery visible beyond glass, fading winter daylight, sober atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s08",
+      "text": "대신 두 회사는 2026년분 연간 허가를 받았죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2026년분"
+      ],
+      "visual": "Two equipment shipment folders beside a blank annual calendar at a customs office, soft morning light, measured relief, editorial news illustration, no readable text, logos, or recognizable faces."
+    },
+    {
+      "id": "s09",
+      "text": "이제 미국의 재승인을 매년 받아야 합니다.",
+      "speaker": "main",
+      "emphasis": [
+        "매년"
+      ],
+      "visual": "A circular arrangement of blank calendar pages surrounding a chipmaking equipment permit folder, American administrative office setting, cool desk lighting, recurring uncertainty, news illustration, no text or logos."
+    },
+    {
+      "id": "s10",
+      "text": "삼성 시안과 SK 우시·다롄이 대상입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "시안과 SK 우시·다롄"
+      ],
+      "visual": "Three distinct semiconductor factory complexes arranged across an abstract map of China, clean blue daylight, informative industrial atmosphere, editorial news illustration, no labels, text, logos, or recognizable faces."
+    },
+    {
+      "id": "s11",
+      "text": "미국 방침은 기존 시설 운영용 장비만 허용입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "기존 시설 운영용"
+      ],
+      "visual": "A replacement equipment module arriving beside an existing semiconductor production line, Chinese cleanroom interior, steady white lighting, practical maintenance atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s12",
+      "text": "미국은 생산능력 확대·고도화용은 불허하죠.",
+      "speaker": "main",
+      "emphasis": [
+        "확대·고도화용"
+      ],
+      "visual": "Advanced semiconductor equipment crates held behind a customs barrier beside factory expansion blueprints, stark overhead lighting, restrictive mood, editorial news illustration, no readable text or logos."
+    },
+    {
+      "id": "s13",
+      "text": "문제는 중국 공장의 미국산 장비 의존이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "미국산 장비"
+      ],
+      "visual": "Large etching machines dominating a Chinese semiconductor cleanroom, intricate pipes and wafer handling robots, cool fluorescent lighting, serious technological atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s14",
+      "text": "10월 15일, 로이터가 다롄 소식을 전했죠.",
+      "speaker": "main",
+      "emphasis": [
+        "10월 15일"
+      ],
+      "visual": "A newsroom desk displaying an unlabeled illustration of a Dalian semiconductor factory, blurred monitors and paper notes, focused evening lighting, investigative atmosphere, news illustration, no text or logos."
+    },
+    {
+      "id": "s15",
+      "text": "SK 측이 추가 장비 반입 허가를 요청했단 겁니다.",
+      "speaker": "main",
+      "emphasis": [
+        "추가 장비 반입"
+      ],
+      "visual": "A proposed semiconductor equipment shipment beside an application folder for a Dalian factory, administrative office setting, neutral desk lighting, deliberative atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s16",
+      "text": "미국 공장 건설 구상과 연계했다는 보도였죠.",
+      "speaker": "main",
+      "emphasis": [
+        "연계했다는 보도"
+      ],
+      "visual": "An American factory concept model beside a Chinese factory equipment shipment model on a planning table, soft directional lighting, unresolved atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s17",
+      "text": "로이터는 익명 소식통 두 명을 인용했습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "두 명"
+      ],
+      "visual": "Two anonymous silhouettes separated by frosted glass panels near a reporter's desk, subdued newsroom lighting, cautious investigative mood, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s18",
+      "text": "SK는 미국 정부 승인 아래 설치 중이라고 했죠.",
+      "speaker": "main",
+      "emphasis": [
+        "미국 정부 승인"
+      ],
+      "visual": "Semiconductor equipment being positioned inside a Dalian cleanroom beside an authorization folder, bright controlled lighting, orderly procedural atmosphere, editorial news illustration, no readable text, logos, or recognizable faces."
+    },
+    {
+      "id": "s19",
+      "text": "SK는 생산능력 확대를 추진하지 않는다고 밝혔죠.",
+      "speaker": "main",
+      "emphasis": [
+        "추진하지 않는다고"
+      ],
+      "visual": "An unbranded corporate briefing desk with a semiconductor factory model and closed statement folder, neutral studio lighting, restrained explanatory mood, editorial news illustration, no text or recognizable faces."
+    },
+    {
+      "id": "s20",
+      "text": "10월 15일 기준, 다롄의 내년 허가는 미발급이었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "10월 15일 기준"
+      ],
+      "visual": "A pending permit folder beside a blank future calendar and a Dalian factory model, cool autumn window light, unresolved administrative atmosphere, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s21",
+      "text": "다시, 삼성 낸드 약 40%를 만드는 시안입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%"
+      ],
+      "visual": "Returning view of a vast Xian semiconductor factory with luminous silicon wafers in the foreground, late afternoon light, substantial industrial presence, editorial news illustration, no text or logos."
+    },
+    {
+      "id": "s22",
+      "text": "삼성·SK 모두 안정적인 장비 확보가 관건이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "안정적인 장비 확보"
+      ],
+      "visual": "Semiconductor equipment crates aligned along a supply corridor connecting cargo facilities and operating cleanrooms, balanced industrial lighting, watchful mood, editorial news illustration, no text, logos, or recognizable faces."
+    },
+    {
+      "id": "s23",
+      "text": "다음엔 삼성·SK의 투자 계획을 짚어봅니다.",
+      "speaker": "main",
+      "emphasis": [
+        "투자 계획"
+      ],
+      "visual": "Two unbranded semiconductor factory models beside investment planning documents on a desk, warm focused lighting against a dark background, anticipatory mood, editorial news illustration, no readable text or logos."
+    }
+  ]
+}

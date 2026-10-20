@@ -10,10 +10,17 @@ export type Sentence = {
   emphasis?: string[]; // 강조할 어절(text 안에 그대로 포함되는 문자열)
 };
 
+export type RenderConfig = {
+  preset?: string;
+  caption?: import("./captions").CaptionStyle; // 자막 스타일 (captions.tsx)
+  theme?: Partial<Theme>;
+};
+
 export type Script = {
   title: string; // 영상 상단에 작게 노출되는 주제/채널 라벨
   hook?: string; // 첫 1초 훅 (없으면 첫 문장 사용)
   sentences: Sentence[];
+  render?: RenderConfig; // preset.py 가 씀
 };
 
 // durations.json: { "s01": 3.21, ... } (초)
@@ -24,8 +31,9 @@ export type ShortsProps = {
   // calculateMetadata가 채움
   script?: Script;
   durations?: Durations;
-  // 스타일 노브 (props로 열어 둠)
+  // 스타일 노브 (props로 열어 둠; script.render 보다 우선)
   theme?: Partial<Theme>;
+  caption?: import("./captions").CaptionStyle;
 };
 
 export type Theme = {
@@ -34,6 +42,7 @@ export type Theme = {
   accent: string;
   text: string;
   muted: string;
+  dark?: boolean; // false 면 밝은 배경(잉크 스케치·신문 느낌) 기준으로 자막·오버레이 색을 잡는다
   gapSec: number; // 문장 사이 무음
   assetHeightRatio: number; // 소스가 있을 때 상단 미디어 영역 비율
 };

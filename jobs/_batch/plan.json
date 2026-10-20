@@ -1,0 +1,119 @@
+[
+  {
+    "id": "v01-flat-illustration",
+    "topic": "10월 22일 금통위, 93%가 '동결' 찍은 이유",
+    "field": "경제/통화정책",
+    "preset": "flat-illustration",
+    "seconds": 85,
+    "sources": [
+      "https://biz.newdaily.co.kr/site/data/html/2026/10/20/2026102000094.html",
+      "https://biz.sbs.co.kr/article/20000340644"
+    ],
+    "hook_idea": "금리는 그대로인데, 시장은 더 불안해졌습니다. 채권 전문가 100명 중 93명이 '동결'이라고 답한 설문에서 물가 지수는 100에서 93으로 떨어졌습니다."
+  },
+  {
+    "id": "v02-neon-cyber",
+    "topic": "하이닉스 -28%, 외국인 9.6조 던진 10월",
+    "field": "반도체/산업",
+    "preset": "neon-cyber",
+    "seconds": 85,
+    "sources": [
+      "https://www.thepublic.kr/news/articleView.html?idxno=322911",
+      "https://www.newspim.com/news/view/20261019000280"
+    ],
+    "hook_idea": "이번 달 외국인이 SK하이닉스 한 종목에서만 9조 6천억 원을 팔았습니다. 코스피를 끌어올린 반도체가 이제 코스피를 끌어내리고 있습니다."
+  },
+  {
+    "id": "v03-ink-sketch",
+    "topic": "파리·니스 야간 통금, 대선 앞 프랑스 폭동",
+    "field": "국제정치",
+    "preset": "ink-sketch",
+    "seconds": 85,
+    "sources": [
+      "https://www.new1cm.com/2026/10/2026-10-20.html"
+    ],
+    "hook_idea": "유럽의 심장 파리에 지금 밤 통행금지가 내려져 있습니다. 전쟁 때문이 아닙니다. 자국민들의 폭동 때문입니다."
+  },
+  {
+    "id": "v04-retro-halftone",
+    "topic": "트럼프 \"김정은 APEC서 만날지 몰라\"",
+    "field": "외교안보",
+    "preset": "retro-halftone",
+    "seconds": 85,
+    "sources": [
+      "https://www.voakorea.com/a/8213182.html",
+      "https://www.voakorea.com/a/state-dprk-china-bridge-sanctions-101926/8212846.html"
+    ],
+    "hook_idea": "\"관계는 매우 좋다. 만날지는 모르겠다.\" 트럼프의 이 한 문장 뒤에 한반도의 다음 한 달이 걸려 있습니다."
+  },
+  {
+    "id": "v05-3d-render",
+    "topic": "수능 'AI 안경' 맨눈 단속, 감독관 반발",
+    "field": "사회/교육",
+    "preset": "3d-render",
+    "seconds": 85,
+    "sources": [
+      "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06222166645614888"
+    ],
+    "hook_idea": "다음 달 19일 수능 시험장. 감독관은 당신의 안경이 그냥 안경인지 AI 안경인지, 맨눈으로 구별해야 합니다."
+  },
+  {
+    "id": "v06-isometric",
+    "topic": "10·15 대책 1년, 서울 아파트 88주 연속 상승",
+    "field": "부동산/금융",
+    "preset": "isometric",
+    "seconds": 85,
+    "sources": [
+      "https://imnews.imbc.com/replay/2026/nwdesk/article/6858283_37004.html",
+      "https://www.mt.co.kr/amp/estate/2026/10/15/2026101323425980432"
+    ],
+    "hook_idea": "집값 잡겠다던 대책 1년, 가장 많이 오른 동네는 강남이 아니라 성북구였습니다. 16.5%."
+  },
+  {
+    "id": "v07-blender-clay",
+    "topic": "카나나 앱 접고 카톡 안으로…카카오 AI 승부수",
+    "field": "테크/AI",
+    "preset": "blender-clay",
+    "seconds": 85,
+    "sources": [
+      "https://www.khan.co.kr/article/202610131100001",
+      "https://www.hankookilbo.com/news/article/A2026091517040005335"
+    ],
+    "hook_idea": "카카오가 1년 공들인 AI 앱을 10월 15일에 그냥 껐습니다. 실패가 아니라, 5천만 명이 쓰는 카톡 안으로 들어가기 위해서입니다."
+  },
+  {
+    "id": "v08-photo-cinematic",
+    "topic": "LNG 8개월 만에 2배…유럽 TTF 한 주 15% 급등",
+    "field": "에너지/기후",
+    "preset": "photo-cinematic",
+    "seconds": 85,
+    "sources": [
+      "https://www.seoul.co.kr/news/economy/2026/10/19/20261019032005",
+      "https://www.newspim.com/news/view/20261013000341"
+    ],
+    "hook_idea": "유럽의 가스 창고가 70%밖에 안 찼습니다. 겨울이 오면 유럽은 한국과 똑같은 배를 두고 가격 전쟁을 벌입니다."
+  },
+  {
+    "id": "v09-paper-cutout",
+    "topic": "김도영 145m 만루포, KIA 23년 만에 PO",
+    "field": "문화/스포츠 산업",
+    "preset": "paper-cutout",
+    "seconds": 85,
+    "sources": [
+      "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05894166645614888"
+    ],
+    "hook_idea": "23년 만의 플레이오프를, 23살 선수가 145m 만루홈런으로 열었습니다. 2001년 기록이 깨지는 데 딱 한 스윙이면 됐습니다."
+  },
+  {
+    "id": "v10-watercolor",
+    "topic": "출산율 목표 지운 정부, 돌봄인력 10만 명 양성",
+    "field": "노동/인구",
+    "preset": "watercolor",
+    "seconds": 85,
+    "sources": [
+      "https://www.kjob.news/news/533997",
+      "https://www.kjob.news/news/535404"
+    ],
+    "hook_idea": "정부가 출산율 목표를 공식 문서에서 지웠습니다. 20년간 380조 원을 쓰고 내린 결론입니다."
+  }
+]

@@ -67,9 +67,19 @@ def to_wav(src: Path, dst: Path) -> None:
     )
 
 
-async def edge_one(text: str, voice: str, out_mp3: Path) -> None:
+async def edge_one(text: str, voice: str, out_mp3: Path, rate: str = "+5%", pitch: str = "+0Hz") -> None:
     import edge_tts
-    await edge_tts.Communicate(text, voice, rate="+5%").save(str(out_mp3))
+    await edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save(str(out_mp3))
+
+
+def voice_config(script: dict) -> dict:
+    """script.json render.voice (preset.py 가 씀) > 환경변수 > 기본값."""
+    v = dict(VOICES_EDGE, rate="+5%", pitch="+0Hz")
+    v.update({k: x for k, x in (script.get("render") or {}).get("voice", {}).items() if x})
+    for k, env in (("main", "TTS_VOICE_MAIN"), ("quote", "TTS_VOICE_QUOTE"), ("rate", "TTS_RATE"), ("pitch", "TTS_PITCH")):
+        if os.environ.get(env):
+            v[k] = os.environ[env]
+    return v
 
 
 def voicebox_one(text: str, speaker: str, out: Path) -> None:
@@ -105,7 +115,10 @@ def main() -> None:
     a = ap.parse_args()
     only = {x for x in a.only.split(",") if x}
 
-    script = json.loads((a.job / "script.json").read_text())
+    script = json.loads((a.job / "script.json").read_text(encoding="utf-8"))
+    voice = voice_config(script)
+    if a.engine == "edge":
+        print(f"  목소리: main={voice['main']} quote={voice['quote']} rate={voice['rate']} pitch={voice['pitch']}")
     audio_dir = a.job / "audio"
     audio_dir.mkdir(exist_ok=True)
     dur_path = audio_dir / "durations.json"
@@ -119,7 +132,7 @@ def main() -> None:
             continue
         raw = audio_dir / f"{s['id']}.raw"
         if a.engine == "edge":
-            asyncio.run(edge_one(s["text"], VOICES_EDGE[s.get("speaker", "main")], raw))
+            asyncio.run(edge_one(s["text"], voice[s.get("speaker", "main")], raw, voice["rate"], voice["pitch"]))
         else:
             voicebox_one(s["text"], s.get("speaker", "main"), raw)
         to_wav(raw, wav)

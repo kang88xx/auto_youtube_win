@@ -1,0 +1,164 @@
+{
+  "pass": false,
+  "passed": 24,
+  "total": 26,
+  "threshold": 0.75,
+  "sentences": {
+    "s01": {
+      "score": 0.909,
+      "heard": "삼성랜드의 약 40%가 중국 시한에서 나옵니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s02": {
+      "score": 1.0,
+      "heard": "그런데 그 공장 장비 반입 허가가 1년짜리거든요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s03": {
+      "score": 1.0,
+      "heard": "미국은 왜 매년 다시 심사하는 걸까요?",
+      "attempts": 1,
+      "pass": true
+    },
+    "s04": {
+      "score": 1.0,
+      "heard": "시작은 2022년 10월이었습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s05": {
+      "score": 1.0,
+      "heard": "첨단 장비의 대중 수출을 허가제로 묶었거든요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s06": {
+      "score": 0.714,
+      "heard": "삼성 스캔은 2023년 10월 부지휘를 받았죠.",
+      "attempts": 1,
+      "pass": false
+    },
+    "s07": {
+      "score": 0.95,
+      "heard": "미국산 장비를 개별 허가 없이 들을 수 있던 제도죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s08": {
+      "score": 1.0,
+      "heard": "그런데 2025년 8월 29일 상무부가 움직였습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s09": {
+      "score": 1.0,
+      "heard": "바이든 시대 허점",
+      "attempts": 1,
+      "pass": true
+    },
+    "s10": {
+      "score": 0.872,
+      "heard": "상무부는 파유를 이렇게 부르며 철회했습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s11": {
+      "score": 0.976,
+      "heard": "확장 대고도화용 장비는 허가 안 준다는 방침이었죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s12": {
+      "score": 0.947,
+      "heard": "대상은 삼성시안과 SK우시다렌 공장입니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s13": {
+      "score": 1.0,
+      "heard": "규칙은 2025년 12월 31일 발효됐습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s14": {
+      "score": 1.0,
+      "heard": "그런데 발효 직전, 2026년분 연간 허가가 나왔죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s15": {
+      "score": 0.909,
+      "heard": "최악의 시나리오는 피해다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s16": {
+      "score": 1.0,
+      "heard": "그런데 규제 속에서도 2025년 중국 투자는 늘었습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s17": {
+      "score": 1.0,
+      "heard": "시안 투자가 4,654억원, 약 68% 늘었거든요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s18": {
+      "score": 0.851,
+      "heard": "스카이닉스 다렌도 4,406억원, 52% 증가였죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s19": {
+      "score": 0.95,
+      "heard": "그런데 10월 15일 노이터 보도가 나왔습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s20": {
+      "score": 0.696,
+      "heard": "스카이닉스가 다른 마드비에 장비를 더 넣으려 한다죠.",
+      "attempts": 1,
+      "pass": false
+    },
+    "s21": {
+      "score": 0.913,
+      "heard": "미국 랜드 공장 건설과 연계했다는 소식동 2명의 말이죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s22": {
+      "score": 1.0,
+      "heard": "미국 정부와 긴밀히 협의",
+      "attempts": 1,
+      "pass": true
+    },
+    "s23": {
+      "score": 0.87,
+      "heard": "스케아이닉스는 생산능력 확대는 아니라고 선을 그었죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s24": {
+      "score": 0.917,
+      "heard": "그런데 2027년분 달엔허가는 15일 기준 아직입니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s25": {
+      "score": 0.917,
+      "heard": "낸드 40%의 시한도, 다렌도 매년 허가에 달린 셈이죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s26": {
+      "score": 1.0,
+      "heard": "연말 2027년 허가가 나올지 다음 편에서 짚습니다.",
+      "attempts": 1,
+      "pass": true
+    }
+  }
+}

@@ -32,7 +32,7 @@ bash setup.sh --check    # 뭐가 빠졌는지 점검
 
 ## 폴더
 ```
-pipeline/   공정 스크립트 (script.py, tts.py, qa_audio.py, assets.py, render.sh, make.sh)
+pipeline/   공정 스크립트 (research.py, script.py, review.py, tts.py, qa_audio.py, assets.py, render.sh, make.sh, llm.py)
 render/     Remotion 템플릿 (1080×1920, 30fps) — src/Shorts.tsx
 jobs/{id}/  잡 하나 = 영상 하나 (script.json이 중심 계약)
 tools/bin/  ffmpeg · ffprobe (git 제외)
@@ -40,31 +40,48 @@ tools/bin/  ffmpeg · ffprobe (git 제외)
 .venv/      Python 3.12 (edge-tts, yt-dlp, faster-whisper)
 ```
 
-## 한 편 만들기 (P2 상태: 주제 한 줄이면 끝)
+## 한 편 만들기 (P3 상태: 주제 한 줄이면 끝, 품질 우선)
 ```bash
-pipeline/make.sh "미국 반도체 수출 규제와 삼성·하이닉스"      # jobs/YYYY-MM-DD-001/ 생성 → final.mp4
+pipeline/make.sh "미국 반도체 수출 규제와 삼성·하이닉스"      # jobs/YYYY-MM-DD-001/ 생성 → final.mp4 (15~25분)
 pipeline/make.sh "<주제>" my-job-id                              # 잡 id 지정
-SCRIPT_ARGS="--no-web" pipeline/make.sh "<주제>"                 # 검색 없이(테스트)
+SKIP_RESEARCH=1 SCRIPT_ARGS="--no-web" pipeline/make.sh "<주제>" # 리서치·검색 없이(테스트)
 ```
+공정 순서와 산출물 (각 공정은 산출물이 있으면 건너뛴다 → 중간에 끊겨도 다시 `make.sh`):
+
+| 공정 | 스크립트 | 하는 일 | 산출물 |
+|---|---|---|---|
+| 01 리서치 | `research.py` | claude가 WebSearch·WebFetch로 기사 8개 안팎을 실제로 읽고 사실·숫자·인용 정리 | `research/raw/00-brief.md`, `NN-매체.md`, `research.json` |
+| 02 대본 | `script.py` | **claude와 codex가 동시에 초안**을 쓰고, 심사 패스(claude)가 사실 충실도·훅·흐름 기준으로 합쳐 최종본 | `drafts/claude.json`, `codex.json`, `judge.json`, `script.json` |
+| 02b 검수 | `review.py` | 다른 호출이 근거 자료와 대조해 사실·문장 길이·번역투·emphasis·visual을 고침 | `qa/script.json`(보고서), `drafts/pre-review.json` |
+| 03 음성 | `tts.py` | edge-tts 또는 Voicebox | `audio/*.wav`, `durations.json` |
+| 음성 검수 | `qa_audio.py` | faster-whisper(CUDA)로 받아써서 대조 | `qa/audio.json` |
+| 04 소스 | `assets.py` | claude가 화풍 한 줄 + 문장별 프롬프트를 다듬고, **문장당 2장 생성**, claude가 이미지를 직접 보고 1장 선택 | `assets/cand/{id}_{k}.jpg`, `assets/{id}.jpg` |
+| 04 렌더 | `render.sh` | Remotion | `render/final.mp4`, `thumb.png` |
+
 공정별로 따로 돌릴 때:
 ```bash
-.venv/bin/python pipeline/script.py jobs/<id> "<주제>" [--seconds 80] [--no-web]   # 02 대본 (claude -p)
-.venv/bin/python pipeline/tts.py jobs/<id> [--engine voicebox] [--only s03]        # 03 음성
-.venv/bin/python pipeline/qa_audio.py jobs/<id> [--retry 2] [--device cuda|cpu]    # 음성 검수 (whisper 대조)
-.venv/bin/python pipeline/assets.py jobs/<id> [--only s01,s02] [--force]           # 04 소스 (Magnific 이미지)
-pipeline/render.sh jobs/<id>                                                       # 04 렌더
-cd render && npm run dev                                                           # 미리보기 스튜디오 (브라우저: http://localhost:3000)
+.venv/bin/python pipeline/research.py jobs/<id> "<주제>" [--articles 8] [--force]
+.venv/bin/python pipeline/script.py jobs/<id> "<주제>" [--seconds 80] [--drafts claude,codex] [--no-judge] [--no-web]
+.venv/bin/python pipeline/review.py jobs/<id> [--force]
+.venv/bin/python pipeline/tts.py jobs/<id> [--engine voicebox] [--only s03]
+.venv/bin/python pipeline/qa_audio.py jobs/<id> [--retry 2] [--device cuda|cpu]
+.venv/bin/python pipeline/assets.py jobs/<id> [--candidates 2] [--no-refine] [--no-pick] [--only s01,s02] [--force]
+pipeline/render.sh jobs/<id>
+cd render && npm run dev                      # 미리보기 스튜디오 (브라우저: http://localhost:3000)
 ```
-script.json 문장 필드: `id, text, speaker(main|quote), emphasis[], visual(영어 프롬프트), asset`.
+script.json 문장 필드: `id, text, speaker(main|quote), emphasis[], visual(작가 초안 프롬프트), visual_final(다듬은 프롬프트), asset, asset_pick`. 최상위에 `style`(화풍).
 숫자가 있는 문장은 카운터 카드, 없으면 emphasis[0]이 키워드 카드로 자동 표시.
 
-테스트 픽스처: `jobs/_sample`(8문장), `jobs/_p2test`(21문장). 음성·이미지가 들어 있어 `pipeline/render.sh jobs/_sample` 만으로 렌더를 확인할 수 있다.
+LLM 호출은 전부 `pipeline/llm.py` 를 거친다. claude는 `claude -p`(Max 구독), codex는 `codex exec`(ChatGPT 구독) — 둘 다 JSON 스키마로 출력을 강제. `CODEX_MODEL`, `CODEX_EFFORT` 환경변수로 코덱스 모델을 바꾼다.
+
+테스트 픽스처: `jobs/_sample`(8문장), `jobs/_p2test`(21문장), `jobs/_p3test`(리서치→초안 2개→심사→검수→후보 2장 선택까지 전 공정). 음성·이미지가 들어 있어 `pipeline/render.sh jobs/_sample` 만으로 렌더를 확인할 수 있다.
 
 ## 비용
 - 대본: `claude -p` (편당 약 2분). Claude Max 구독으로 로그인돼 있으면 구독 한도 안에서 쓰이고 따로 청구되지 않는다.
   `brief.json`의 `cost_usd`는 API 요금 환산값일 뿐이다(참고용). 단, 구독 설정에서 "추가 사용(extra usage)"이 켜져 있으면 한도를 넘긴 뒤부터 API 요금으로 청구된다.
   script.py는 MCP 서버·CLAUDE.md를 끄고 호출한다 — 안 끄면 Figma·Gmail·Drive 도구 스키마가 호출마다 약 9만 토큰 붙어 편당 환산비용이 3배쯤 된다.
-- 이미지: Magnific Mystic 1K = 50크레딧/장 (Premium 월 240K 포함 → 편당 20장 기준 약 240편/월)
+- 이미지: Magnific Mystic 1K = 50크레딧/장. 문장당 2장 후보라 편당 약 25문장 × 2 = 2,500크레딧 (Premium 월 240K → 약 95편/월). 아끼려면 `CANDIDATES=1`.
+- codex: ChatGPT 구독 안에서. 대본 초안 1개(편당 1~3분).
 - 음성: edge-tts 무료. Voicebox 로컬 무료.
 
 ## Voicebox (윈도우 쪽에서 실행)

@@ -1,0 +1,260 @@
+{
+  "title": "오늘의 이슈 · 반도체",
+  "hook": "삼성 낸드의 40%가 중국 시안에서 나옵니다.",
+  "titles": [
+    "삼성 낸드 40%, 허가는 1년짜리였다",
+    "VEU 철회 후 중국 투자 68% 늘린 이유",
+    "SK하이닉스 2027년 허가, 아직 없다"
+  ],
+  "description": "미국이 2025년 8월 삼성·SK하이닉스 중국 공장의 VEU 지위를 철회하고 연간 허가 체계로 바꾼 뒤, 두 회사는 오히려 중국 투자를 늘렸습니다. 그런데 2026년 10월 15일 기준 SK하이닉스 다롄 공장의 2027년분 허가는 아직 나오지 않았습니다. 시안·우시·다롄 공장의 운명이 매년 미국의 승인에 달린 구조를 정리했습니다.\n\n출처:\nhttps://www.metroseoul.co.kr/article/20261019500397\nhttps://daily.hankooki.com/news/articleView.html?idxno=1415281\nhttps://news.sbs.co.kr/english/article.do?news_id=N1008799275\nhttps://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/\nhttps://www.koreajoongangdaily.com/business/samsung-sk-hynix-pour-fresh-investment-into-aging-china-factories-despite-us-curbs/12832376\nhttps://finance.yahoo.com/news/samsung-wins-us-annual-approval-041415683.html\nhttps://www.khan.co.kr/article/202512302047015\nhttps://www.govinfo.gov/content/pkg/FR-2025-09-02/html/2025-16735.htm\nhttps://www.koreaherald.com/article/10565077\nhttps://www.ddaily.co.kr/page/view/2025082923561944620",
+  "tags": [
+    "반도체",
+    "삼성전자",
+    "SK하이닉스",
+    "수출규제",
+    "VEU",
+    "미국 상무부",
+    "시안 공장",
+    "다롄 공장",
+    "낸드",
+    "솔리다임",
+    "미중 갈등",
+    "쇼츠뉴스"
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "삼성 낸드의 40%가 중국 시안에서 나옵니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%가"
+      ],
+      "visual": "Vast semiconductor fab cleanroom in Xi'an China, rows of NAND wafer processing tools, cool blue lighting, wide angle, news illustration style, no text"
+    },
+    {
+      "id": "s02",
+      "text": "그런데 그 공장 장비 반입 허가가 1년짜리거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "1년짜리거든요"
+      ],
+      "visual": "Official export license document on a desk with a calendar showing one year, stamp and pen beside it, dim office lighting, tense mood, editorial illustration"
+    },
+    {
+      "id": "s03",
+      "text": "미국은 왜 매년 다시 심사하는 걸까요?",
+      "speaker": "main",
+      "emphasis": [
+        "매년"
+      ],
+      "visual": "Large magnifying glass hovering over a shipping crate of chipmaking equipment at a port, US flag colors in background, dramatic spotlight, news graphic style"
+    },
+    {
+      "id": "s04",
+      "text": "시작은 2022년 10월이었습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2022년"
+      ],
+      "visual": "Washington DC government building exterior at dusk, autumn leaves, long shadows, serious documentary tone, muted colors, illustration"
+    },
+    {
+      "id": "s05",
+      "text": "첨단 장비의 대중 수출을 허가제로 묶었거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "허가제로"
+      ],
+      "visual": "Cargo containers of high-tech machinery wrapped in red tape and padlocks on a dock, overcast sky, symbolic export restriction, editorial illustration"
+    },
+    {
+      "id": "s06",
+      "text": "2023년 10월엔 VEU 지위를 부여했어요.",
+      "speaker": "main",
+      "emphasis": [
+        "2023년"
+      ],
+      "visual": "Green checkmark badge glowing over a stylized factory silhouette, soft morning light, sense of relief and approval, clean news infographic style"
+    },
+    {
+      "id": "s07",
+      "text": "허가 없이 미국산 장비를 넣을 수 있던 제도죠.",
+      "speaker": "main",
+      "emphasis": [
+        "허가"
+      ],
+      "visual": "Open factory gate with trucks carrying semiconductor equipment rolling in freely, bright daylight, smooth flow, flat vector illustration"
+    },
+    {
+      "id": "s08",
+      "text": "그런데 2025년 8월 29일, 상무부가 움직였습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "8월"
+      ],
+      "visual": "Commerce department press room with podium and microphones, empty chairs, harsh fluorescent light, moment before an announcement, illustration"
+    },
+    {
+      "id": "s09",
+      "text": "\"바이든 시대 허점\"",
+      "speaker": "quote",
+      "emphasis": [
+        "허점\""
+      ],
+      "visual": "Cracked wall with light leaking through a hole, hand reaching to seal it, dramatic contrast lighting, metaphor for closing a loophole, editorial art"
+    },
+    {
+      "id": "s10",
+      "text": "상무부는 VEU를 이렇게 부르며 철회했습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "철회했습니다"
+      ],
+      "visual": "Green approval badge being torn off a factory blueprint, torn paper edges, cold grey office lighting, decisive mood, news illustration"
+    },
+    {
+      "id": "s11",
+      "text": "확장·고도화용 장비는 허가 안 준다는 방침이었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "허가"
+      ],
+      "visual": "Red barrier blocking new machines from entering an expansion wing of a fab, existing line still running behind, split lighting, flat illustration"
+    },
+    {
+      "id": "s12",
+      "text": "규칙은 2025년 12월 31일 발효됐습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "12월"
+      ],
+      "visual": "Desk calendar flipped to December 31 beside a thick federal rulebook, winter window light, quiet countdown atmosphere, editorial illustration"
+    },
+    {
+      "id": "s13",
+      "text": "그런데 발효 하루 전, 2026년분 연간 허가가 나왔죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2026년분"
+      ],
+      "visual": "Envelope with approval seal arriving on a desk at night, clock near midnight, warm lamp light, last-minute relief, news illustration"
+    },
+    {
+      "id": "s14",
+      "text": "\"최악의 시나리오는 피했다\"",
+      "speaker": "quote",
+      "emphasis": [
+        "피했다\""
+      ],
+      "visual": "Businessperson silhouette exhaling by a window overlooking a fab complex at dawn, soft golden light, relief mood, no face visible, illustration"
+    },
+    {
+      "id": "s15",
+      "text": "그런데도 두 회사는 중국 투자를 늘렸습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "늘렸습니다"
+      ],
+      "visual": "Rising bar chart made of stacked wafer boxes in front of a Chinese factory, bright daylight, confident upward momentum, infographic style"
+    },
+    {
+      "id": "s16",
+      "text": "2025년 시안 투자는 4654억 원, 68% 늘었거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "4654억"
+      ],
+      "visual": "Construction cranes upgrading a massive fab in Xi'an, workers installing new tools, afternoon sun, scale and investment, editorial illustration"
+    },
+    {
+      "id": "s17",
+      "text": "SK하이닉스 다롄도 4406억 원, 52% 증가였죠.",
+      "speaker": "main",
+      "emphasis": [
+        "4406억"
+      ],
+      "visual": "Coastal industrial site in Dalian with a large memory fab and new building under construction, sea haze, late afternoon light, news illustration"
+    },
+    {
+      "id": "s18",
+      "text": "문제는 SK하이닉스 다롄 공장입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "다롄"
+      ],
+      "visual": "Empty cavernous fab hall with bare floor and unused equipment pads, single beam of light, waiting and uncertainty, illustration"
+    },
+    {
+      "id": "s19",
+      "text": "10월 15일 로이터가 소식통 2명을 인용해 보도했죠.",
+      "speaker": "main",
+      "emphasis": [
+        "2명을"
+      ],
+      "visual": "Newsroom monitor glowing with a breaking story, two shadowy figures in the background, blue screen light, investigative mood, no readable text"
+    },
+    {
+      "id": "s20",
+      "text": "다롄 Mod B에 장비를 더 넣게 해달라는 요청이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "Mod"
+      ],
+      "visual": "Crated semiconductor tools waiting outside a sealed fab module door, forklift idle, grey overcast light, anticipation, editorial illustration"
+    },
+    {
+      "id": "s21",
+      "text": "미국 뉴욕주 낸드 공장 건설과 연계해서요.",
+      "speaker": "main",
+      "emphasis": [
+        "뉴욕주"
+      ],
+      "visual": "Rural upstate New York landscape with a surveyed plot and fab blueprint overlay, autumn trees, morning light, planning stage, illustration"
+    },
+    {
+      "id": "s22",
+      "text": "\"미국 정부와 긴밀히 협의\"",
+      "speaker": "quote",
+      "emphasis": [
+        "협의\""
+      ],
+      "visual": "Two negotiators' hands across a conference table with documents and small flags of Korea and the US, warm lamp light, diplomatic tone, no faces"
+    },
+    {
+      "id": "s23",
+      "text": "SK하이닉스는 생산능력 확대는 아니라고 선을 그었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "확대는"
+      ],
+      "visual": "Factory floor plan with a firm red line drawn around existing area, ruler and pen on paper, crisp desk lighting, clarification mood, illustration"
+    },
+    {
+      "id": "s24",
+      "text": "그런데 다롄의 2027년분 허가는 15일 기준 아직입니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2027년분"
+      ],
+      "visual": "Empty inbox tray labeled with a blank form, calendar page turning toward a new year, cold blue office light, waiting tension, editorial art"
+    },
+    {
+      "id": "s25",
+      "text": "낸드 40%의 시안도, 다롄도 매년 허가에 달린 셈이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "40%의"
+      ],
+      "visual": "Two large fabs hanging from a single thread above an hourglass, dramatic spotlight, fragile balance metaphor, news illustration style"
+    },
+    {
+      "id": "s26",
+      "text": "연말 2027년 허가가 나올지, 다음 편에서 짚습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2027년"
+      ],
+      "visual": "Snowy December night over a fab complex, one window lit, distant city lights, suspenseful cliffhanger mood, cinematic illustration"
+    }
+  ]
+}

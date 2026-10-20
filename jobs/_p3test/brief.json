@@ -1,0 +1,49 @@
+{
+  "topic": "미국 반도체 수출 규제와 삼성·SK하이닉스 중국 공장",
+  "titles": [
+    "삼성 낸드 40%, 허가는 1년짜리였다",
+    "VEU 철회 뒤 중국 투자 68% 늘린 이유",
+    "SK하이닉스 2027년 허가, 아직 없다"
+  ],
+  "description": "미국이 2025년 8월 삼성·SK하이닉스 중국 공장의 VEU 지위를 철회하고 연간 허가 체계로 바꾼 뒤, 두 회사는 오히려 중국 투자를 늘렸습니다. 그런데 2026년 10월 15일 기준 SK하이닉스 다롄 공장의 2027년분 허가는 아직 나오지 않았습니다. 시안·우시·다롄 공장이 매년 미국의 승인에 달린 구조를 정리했습니다.\n\n출처:\nhttps://www.metroseoul.co.kr/article/20261019500397\nhttps://daily.hankooki.com/news/articleView.html?idxno=1415281\nhttps://news.sbs.co.kr/english/article.do?news_id=N1008799275\nhttps://asiatimes.com/2026/10/sk-hynix-needs-a-trump-2027-deal-to-expand-its-dalian-nand-fab/\nhttps://www.koreajoongangdaily.com/business/samsung-sk-hynix-pour-fresh-investment-into-aging-china-factories-despite-us-curbs/12832376\nhttps://finance.yahoo.com/news/samsung-wins-us-annual-approval-041415683.html\nhttps://www.khan.co.kr/article/202512302047015\nhttps://www.govinfo.gov/content/pkg/FR-2025-09-02/html/2025-16735.htm\nhttps://www.koreaherald.com/article/10565077\nhttps://www.ddaily.co.kr/page/view/2025082923561944620",
+  "tags": [
+    "반도체",
+    "삼성전자",
+    "SK하이닉스",
+    "수출규제",
+    "VEU",
+    "미국 상무부",
+    "시안 공장",
+    "다롄 공장",
+    "낸드",
+    "솔리다임",
+    "미중 갈등",
+    "쇼츠뉴스"
+  ],
+  "source": "research",
+  "drafts": {
+    "claude": {
+      "duration_ms": 121307,
+      "cost_usd": 0.8893310000000001
+    },
+    "codex": {
+      "duration_ms": 96044,
+      "cost_usd": null
+    }
+  },
+  "judge": {
+    "engines": [
+      "claude",
+      "codex"
+    ],
+    "notes": "초안 A를 뼈대로 삼았다. 훅이 '40%→1년짜리 허가' 반전으로 3초 안에 멈추게 하고, 상무부 '바이든 시대 허점'·업계 '최악은 피했다'·SK 입장 같은 실제 인용이 리듬을 만들며, 4654억·4406억 같은 숫자가 문장마다 박혀 있어서다. B에서는 대상 공장 3곳(시안·우시·다롄)을 명시한 문장과, 로이터 보도를 '연계했다는 소식통의 말'로 거리 두는 신중한 프레임을 가져왔다. 사실 충실도 보정으로 '40%'와 '68%'에 '약'을 붙였고(브리프 표기·메트로 67.5% 상충), A의 '뉴욕주 낸드 공장 건설과 연계해서요'는 회사가 거래를 제안했다고 단정하는 표현이라 '미국 낸드 공장 건설과 연계했다는 소식통 2명의 말'로 고쳤다. 2027년분 미발급은 다롄에만 한정해 삼성으로 확대되지 않게 했다. A의 '문제는 다롄 공장입니다'와 '로이터 소식통 2명 인용' 문장은 정보가 겹쳐 합쳤고, 1년 유예 문장은 분량 조절을 위해 뺐다. 총 26문장, 모두 35자 이내로 맞췄다.",
+    "duration_ms": 91567,
+    "cost_usd": 0.9867345000000001
+  },
+  "cost_usd": 1.876,
+  "review": {
+    "score": 82,
+    "issues": 5,
+    "cost_usd": 1.0101369999999998
+  }
+}
