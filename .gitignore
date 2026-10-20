@@ -10,3 +10,5 @@ jobs/*/assets/cand/
 .DS_Store
 __pycache__/
 .omc/
+jobs/_batch/*.log
+jobs/_batch/nohup.out
