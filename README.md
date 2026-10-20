@@ -61,7 +61,9 @@ script.json 문장 필드: `id, text, speaker(main|quote), emphasis[], visual(�
 테스트 픽스처: `jobs/_sample`(8문장), `jobs/_p2test`(21문장). 음성·이미지가 들어 있어 `pipeline/render.sh jobs/_sample` 만으로 렌더를 확인할 수 있다.
 
 ## 비용
-- 대본: `claude -p` (편당 약 2분). `brief.json`의 `cost_usd`가 0이 아니면 API 과금 중인지 확인.
+- 대본: `claude -p` (편당 약 2분). Claude Max 구독으로 로그인돼 있으면 구독 한도 안에서 쓰이고 따로 청구되지 않는다.
+  `brief.json`의 `cost_usd`는 API 요금 환산값일 뿐이다(참고용). 단, 구독 설정에서 "추가 사용(extra usage)"이 켜져 있으면 한도를 넘긴 뒤부터 API 요금으로 청구된다.
+  script.py는 MCP 서버·CLAUDE.md를 끄고 호출한다 — 안 끄면 Figma·Gmail·Drive 도구 스키마가 호출마다 약 9만 토큰 붙어 편당 환산비용이 3배쯤 된다.
 - 이미지: Magnific Mystic 1K = 50크레딧/장 (Premium 월 240K 포함 → 편당 20장 기준 약 240편/월)
 - 음성: edge-tts 무료. Voicebox 로컬 무료.
 

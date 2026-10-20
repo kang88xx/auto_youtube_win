@@ -115,8 +115,11 @@ def main() -> None:
     prompt = PROMPT.format(topic=a.topic, today=date.today().isoformat(), seconds=a.seconds,
                            n_min=int(n * 0.85), n_max=int(n * 1.15), source_rule=source_rule)
 
+    # MCP 서버(Figma·Gmail·Drive·Docs·OMC 등)의 도구 스키마가 호출마다 약 9만 토큰씩 붙어서 비용의 대부분을 차지한다.
+    # 대본 작성엔 필요 없으니 MCP·설정(CLAUDE.md, 훅)을 끈다: 컨텍스트 91k → 3k 미만.
     cmd = ["claude", "-p", prompt, "--output-format", "json", "--json-schema", json.dumps(SCHEMA, ensure_ascii=False),
-           "--max-turns", "20", "--system-prompt", "You write Korean short-form video scripts. Output only what is asked."]
+           "--max-turns", "20", "--system-prompt", "You write Korean short-form video scripts. Output only what is asked.",
+           "--strict-mcp-config", "--mcp-config", '{"mcpServers":{}}', "--setting-sources", ""]
     if tools:
         cmd += ["--allowedTools", *tools]
     else:
