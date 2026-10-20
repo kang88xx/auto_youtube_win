@@ -29,6 +29,8 @@ const parseNumber = (text: string, emphasis?: string[]) => {
   const e = (emphasis ?? []).find((x) => /\d/.test(x));
   const m = (e ? e.match(NUM_RE) : null) ?? text.match(NUM_RE);
   if (!m) return null;
+  // 단위가 없는 숫자는 강조 어절에 든 것만 카드로 ("19세기", "s01" 같은 건 통계가 아니다)
+  if (!m[2] && !e) return null;
   const value = parseFloat(m[1].replace(/,/g, ""));
   if (Number.isNaN(value)) return null;
   return { value, unit: m[2] ?? "", raw: m[1] };
