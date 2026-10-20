@@ -1,0 +1,134 @@
+{
+  "pass": false,
+  "passed": 20,
+  "total": 21,
+  "threshold": 0.75,
+  "sentences": {
+    "s01": {
+      "score": 0.909,
+      "heard": "삼성랜드의 약 40%가 중국 시한에서 나옵니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s02": {
+      "score": 0.851,
+      "heard": "스카이닉스 드램도 약 40%가 우시 공장이거든요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s03": {
+      "score": 1.0,
+      "heard": "그런데 이 공장들 계속 돌릴 수 있을까요?",
+      "attempts": 1,
+      "pass": true
+    },
+    "s04": {
+      "score": 1.0,
+      "heard": "시작은 2022년 10월 7일 미국의 수출 규제였습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s05": {
+      "score": 1.0,
+      "heard": "첨단 장비를 중국에 못 보내게 막은 거죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s06": {
+      "score": 1.0,
+      "heard": "문제는 삼성과 SK 공장이 중국에 있다는 점이었어요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s07": {
+      "score": 1.0,
+      "heard": "장비가 안 들어오면 공정 업그레이드가 막힙니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s08": {
+      "score": 1.0,
+      "heard": "그래서 미국은 1년 유예를 먼저 내줬습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s09": {
+      "score": 0.837,
+      "heard": "2023년 10월엔 무기한 유예, 부유 지휘를 줬죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s10": {
+      "score": 1.0,
+      "heard": "한숨 돌린 듯 했지만 조건이 있었습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s11": {
+      "score": 0.952,
+      "heard": "칩스법 보조금 조건 10년간 중국 증설 제안이었죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s12": {
+      "score": 1.0,
+      "heard": "첨단 공정은 10년 동안 5% 이상 못 늘립니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s13": {
+      "score": 0.898,
+      "heard": "그런데 2025년 8월 미국이 VO 지휘를 취소했습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s14": {
+      "score": 1.0,
+      "heard": "2025년 12월 31일부로 효력이 끝났죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s15": {
+      "score": 1.0,
+      "heard": "이제는 매년 라이선스를 새로 받아야 합니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s16": {
+      "score": 0.7,
+      "heard": "현상 유지만 허용되어 있습니다.",
+      "attempts": 1,
+      "pass": false
+    },
+    "s17": {
+      "score": 1.0,
+      "heard": "장비 반입은 되지만 기술 업그레이드는 안된다는 뜻이에요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s18": {
+      "score": 0.957,
+      "heard": "시안 공장은 128단랜드에 묶여있다는 말이 나옵니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s19": {
+      "score": 0.955,
+      "heard": "경쟁사는 이미 약 300단 랜드를 양산하는데 말이죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s20": {
+      "score": 0.96,
+      "heard": "삼성랜드의 40% 그 공장이 시간과 싸우고 있는 겁니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s21": {
+      "score": 1.0,
+      "heard": "2026년 라이선스 다음 편에서 뜯어봅니다.",
+      "attempts": 1,
+      "pass": true
+    }
+  }
+}

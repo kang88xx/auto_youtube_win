@@ -1,0 +1,238 @@
+{
+  "title": "오늘의 이슈 · 반도체 규제",
+  "hook": "삼성 낸드의 약 40%가 중국 시안에서 나옵니다.",
+  "titles": [
+    "삼성 낸드 40%가 중국에…미국이 유예 취소한 이유",
+    "2022년 규제, 2025년 취소…시안 공장의 3년",
+    "무기한 유예 끝났다, 1년 라이선스의 함정"
+  ],
+  "description": "2022년 10월 미국의 대중국 반도체 장비 수출 규제 이후 삼성전자 시안 공장과 SK하이닉스 우시·다롄 공장이 어떤 길을 걸어왔는지 정리합니다. 1년 유예, 무기한 VEU 지위, 그리고 2025년 VEU 취소와 연간 라이선스 전환까지 시간 순서로 짚었습니다. (테스트 모드: 검색 없이 일반적으로 알려진 사실 기반)\n\n출처:\n- https://www.bis.doc.gov\n- https://www.commerce.gov\n- https://www.federalregister.gov",
+  "tags": [
+    "반도체",
+    "삼성전자",
+    "SK하이닉스",
+    "수출규제",
+    "미중갈등",
+    "시안공장",
+    "우시공장",
+    "VEU",
+    "낸드",
+    "D램",
+    "칩스법",
+    "경제쇼츠"
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "삼성 낸드의 약 40%가 중국 시안에서 나옵니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%가"
+      ],
+      "visual": "Vast modern semiconductor fabrication plant exterior at dusk in Xi'an, China, glowing cleanroom windows, cooling towers, industrial haze, dramatic amber lighting, editorial news illustration style",
+      "asset": "assets/s01.jpg"
+    },
+    {
+      "id": "s02",
+      "text": "SK하이닉스 D램도 약 40%가 우시 공장이거든요.",
+      "speaker": "main",
+      "emphasis": [
+        "40%가"
+      ],
+      "visual": "Aerial view of a sprawling memory chip factory campus beside a canal in Wuxi, China, gray morning light, rows of white buildings, trucks at loading docks, news illustration tone",
+      "asset": "assets/s02.jpg"
+    },
+    {
+      "id": "s03",
+      "text": "그런데 이 공장들, 계속 돌릴 수 있을까요?",
+      "speaker": "main",
+      "emphasis": [
+        "계속"
+      ],
+      "visual": "Close-up of a silicon wafer held by a gloved hand under blue cleanroom light, a single question-mark-shaped shadow cast on the wall, tense atmosphere, flat news illustration",
+      "asset": "assets/s03.jpg"
+    },
+    {
+      "id": "s04",
+      "text": "시작은 2022년 10월 7일 미국의 수출 규제였습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2022년"
+      ],
+      "visual": "Imposing neoclassical government building in Washington DC under overcast sky, American flag silhouette, long shadows on marble steps, somber documentary lighting, no text",
+      "asset": "assets/s04.jpg"
+    },
+    {
+      "id": "s05",
+      "text": "첨단 장비를 중국에 못 보내게 막은 거죠.",
+      "speaker": "main",
+      "emphasis": [
+        "첨단"
+      ],
+      "visual": "Giant lithography machine crate sealed with red tape at a cargo port, container ships blurred behind, cold floodlights, blocked shipment mood, editorial illustration",
+      "asset": "assets/s05.jpg"
+    },
+    {
+      "id": "s06",
+      "text": "문제는 삼성과 SK 공장이 중국에 있다는 점이었어요.",
+      "speaker": "main",
+      "emphasis": [
+        "중국에"
+      ],
+      "visual": "Stylized map of East Asia with glowing factory icons placed in central China, red dotted lines stretching toward Korea, dark navy background, infographic news tone, no labels",
+      "asset": "assets/s06.jpg"
+    },
+    {
+      "id": "s07",
+      "text": "장비가 안 들어오면 공정 업그레이드가 막힙니다.",
+      "speaker": "main",
+      "emphasis": [
+        "업그레이드가"
+      ],
+      "visual": "Empty cleanroom bay with an unfilled floor marking where a machine should stand, idle robotic arm, dim white light, waiting atmosphere, clean editorial illustration",
+      "asset": "assets/s07.jpg"
+    },
+    {
+      "id": "s08",
+      "text": "그래서 미국은 1년 유예를 먼저 내줬습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "1년"
+      ],
+      "visual": "Hourglass with fine sand on a polished desk beside a stamped folder, warm lamp light in a dark office, countdown feeling, news illustration style",
+      "asset": "assets/s08.jpg"
+    },
+    {
+      "id": "s09",
+      "text": "2023년 10월엔 무기한 유예, VEU 지위를 줬죠.",
+      "speaker": "main",
+      "emphasis": [
+        "무기한"
+      ],
+      "visual": "Heavy steel vault door swinging open to reveal a bright corridor, soft golden light spilling out, relief and access mood, cinematic editorial illustration",
+      "asset": "assets/s09.jpg"
+    },
+    {
+      "id": "s10",
+      "text": "한숨 돌린 듯했지만 조건이 있었습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "조건이"
+      ],
+      "visual": "Thick contract document with a visible fine-print section under a magnifying glass, cool desk lamp light, shadowy office background, cautionary tone, illustration",
+      "asset": "assets/s10.jpg"
+    },
+    {
+      "id": "s11",
+      "text": "칩스법 보조금 조건, 10년간 중국 증설 제한이었죠.",
+      "speaker": "main",
+      "emphasis": [
+        "10년간"
+      ],
+      "visual": "Construction crane frozen mid-air above a half-built factory wing, yellow caution barriers, overcast sky, halted expansion feeling, news illustration tone",
+      "asset": "assets/s11.jpg"
+    },
+    {
+      "id": "s12",
+      "text": "첨단 공정은 10년 동안 5% 이상 못 늘립니다.",
+      "speaker": "main",
+      "emphasis": [
+        "5%"
+      ],
+      "visual": "Bar chart made of silicon wafers with a small red cap line above the shortest bar, dark studio backdrop, spotlight, data-driven editorial illustration, no text",
+      "asset": "assets/s12.jpg"
+    },
+    {
+      "id": "s13",
+      "text": "그런데 2025년 8월, 미국이 VEU 지위를 취소했습니다.",
+      "speaker": "main",
+      "emphasis": [
+        "취소했습니다"
+      ],
+      "visual": "Official envelope torn open on a desk, a red rubber stamp mark bleeding across paper, harsh overhead light, abrupt reversal mood, editorial illustration",
+      "asset": "assets/s13.jpg"
+    },
+    {
+      "id": "s14",
+      "text": "2025년 12월 31일부로 효력이 끝났죠.",
+      "speaker": "main",
+      "emphasis": [
+        "12월"
+      ],
+      "visual": "Wall calendar showing the last page about to fall, snow outside a factory window at night, cold blue tones, deadline atmosphere, news illustration",
+      "asset": "assets/s14.jpg"
+    },
+    {
+      "id": "s15",
+      "text": "이제는 매년 라이선스를 새로 받아야 합니다.",
+      "speaker": "main",
+      "emphasis": [
+        "매년"
+      ],
+      "visual": "Long queue of identical folders moving along a conveyor toward a single approval window, fluorescent bureaucratic lighting, repetitive cycle mood, flat illustration",
+      "asset": "assets/s15.jpg"
+    },
+    {
+      "id": "s16",
+      "text": "\"현상 유지만 허용\"",
+      "speaker": "quote",
+      "emphasis": [
+        "현상"
+      ],
+      "visual": "Microphone on an empty podium in a dim press room, single spotlight, blurred flags in background, official statement atmosphere, no text, editorial illustration",
+      "asset": "assets/s16.jpg"
+    },
+    {
+      "id": "s17",
+      "text": "장비 반입은 되지만 기술 업그레이드는 안 된다는 뜻이에요.",
+      "speaker": "main",
+      "emphasis": [
+        "업그레이드는"
+      ],
+      "visual": "Two doors side by side in a factory hallway, one open with spare parts crates, one locked with chains, split lighting warm and cold, symbolic news illustration",
+      "asset": "assets/s17.jpg"
+    },
+    {
+      "id": "s18",
+      "text": "시안 공장은 128단 낸드에 묶여 있다는 말이 나옵니다.",
+      "speaker": "main",
+      "emphasis": [
+        "128단"
+      ],
+      "visual": "Cross-section of a layered memory chip stack rendered like a tall building frozen at a fixed height, anchored by heavy chains, dark blue background, technical illustration",
+      "asset": "assets/s18.jpg"
+    },
+    {
+      "id": "s19",
+      "text": "경쟁사는 이미 약 300단 낸드를 양산하는데 말이죠.",
+      "speaker": "main",
+      "emphasis": [
+        "300단"
+      ],
+      "visual": "Two chip towers side by side, one short and one soaring far taller into bright light, racing-ahead feeling, sleek futuristic cleanroom backdrop, editorial illustration",
+      "asset": "assets/s19.jpg"
+    },
+    {
+      "id": "s20",
+      "text": "삼성 낸드의 40%, 그 공장이 시간과 싸우고 있는 겁니다.",
+      "speaker": "main",
+      "emphasis": [
+        "40%,"
+      ],
+      "visual": "Semiconductor fab at night in Xi'an with a giant translucent clock face overlaid on the sky, hands ticking, amber window glow, tense cinematic news illustration",
+      "asset": "assets/s20.jpg"
+    },
+    {
+      "id": "s21",
+      "text": "2026년 라이선스, 다음 편에서 뜯어봅니다.",
+      "speaker": "main",
+      "emphasis": [
+        "2026년"
+      ],
+      "visual": "Sealed document folder on a dark table with a thin beam of light under a closed door, anticipation mood, minimal composition, editorial illustration, no text",
+      "asset": "assets/s21.jpg"
+    }
+  ],
+  "topic": "미국의 중국 반도체 장비 수출 규제와 삼성·SK하이닉스 중국 공장",
+  "created": "2026-10-20"
+}

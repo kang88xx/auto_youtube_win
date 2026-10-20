@@ -1,0 +1,11 @@
+.venv/
+.voicebox/
+.env
+tools/
+render/node_modules/
+render/public/jobs/
+jobs/*/render/
+._*
+.DS_Store
+__pycache__/
+.omc/

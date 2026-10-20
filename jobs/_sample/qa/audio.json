@@ -1,0 +1,56 @@
+{
+  "pass": true,
+  "passed": 8,
+  "total": 8,
+  "threshold": 0.75,
+  "sentences": {
+    "s01": {
+      "score": 1.0,
+      "heard": "엔비디아 시총 5조 달러, 이게 왜 한국 얘기냐고요?",
+      "attempts": 1,
+      "pass": true
+    },
+    "s02": {
+      "score": 1.0,
+      "heard": "엔비디아 칩 하나에 들어가는 메모리의 70%가 한국산이거든요.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s03": {
+      "score": 1.0,
+      "heard": "그런데 지난주 미국이 중국향 반도체 장비 수출을 또 막았습니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s04": {
+      "score": 0.864,
+      "heard": "삼성과 스카닉스 중국 공장이 바로 그 장비를 씁니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s05": {
+      "score": 0.909,
+      "heard": "한국기업은 이외로 두겠다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s06": {
+      "score": 1.0,
+      "heard": "미국 상무부가 이렇게 말했지만 유효기간은 1년짜리입니다.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s07": {
+      "score": 1.0,
+      "heard": "그래서 두 회사 주가는 하루 만에 3% 넘게 빠졌죠.",
+      "attempts": 1,
+      "pass": true
+    },
+    "s08": {
+      "score": 1.0,
+      "heard": "정리하면 엔비디아가 커질수록 한국이 버는 돈도 커지는데 그 길목을 미국이 쥐고 있다는 겁니다.",
+      "attempts": 1,
+      "pass": true
+    }
+  }
+}

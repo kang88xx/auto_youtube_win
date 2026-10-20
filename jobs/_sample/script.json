@@ -1,0 +1,84 @@
+{
+  "title": "오늘의 이슈 · 반도체",
+  "hook": "엔비디아 시총 5조 달러, 이게 왜 한국 얘기냐고요?",
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "엔비디아 시총 5조 달러, 이게 왜 한국 얘기냐고요?",
+      "speaker": "main",
+      "asset": "assets/s01.jpg",
+      "emphasis": [
+        "한국"
+      ],
+      "visual": "NVIDIA headquarters glowing at night with a giant glowing stock chart rising, dramatic"
+    },
+    {
+      "id": "s02",
+      "text": "엔비디아 칩 하나에 들어가는 메모리의 70%가 한국산이거든요.",
+      "speaker": "main",
+      "asset": "assets/s02.jpg",
+      "emphasis": [
+        "한국산"
+      ],
+      "visual": "close-up of an AI GPU chip with stacked HBM memory modules, blue neon glow, Korean flag reflection subtle"
+    },
+    {
+      "id": "s03",
+      "text": "그런데 지난주, 미국이 중국향 반도체 장비 수출을 또 막았습니다.",
+      "speaker": "main",
+      "asset": "assets/s03.jpg",
+      "emphasis": [
+        "또 막았습니다"
+      ],
+      "visual": "US Capitol building with semiconductor equipment silhouettes and a red STOP barrier, tense atmosphere"
+    },
+    {
+      "id": "s04",
+      "text": "삼성과 SK하이닉스 중국 공장이 바로 그 장비를 씁니다.",
+      "speaker": "main",
+      "asset": "assets/s04.jpg",
+      "emphasis": [
+        "중국 공장"
+      ],
+      "visual": "massive semiconductor fab cleanroom in China, workers in white suits, cold blue light"
+    },
+    {
+      "id": "s05",
+      "text": "\"한국 기업은 예외로 두겠다\"",
+      "speaker": "quote",
+      "asset": "assets/s05.jpg",
+      "emphasis": [],
+      "visual": "empty press briefing podium of the US Department of Commerce, flags, spotlight"
+    },
+    {
+      "id": "s06",
+      "text": "미국 상무부가 이렇게 말했지만, 유효기간은 1년짜리입니다.",
+      "speaker": "main",
+      "asset": "assets/s06.jpg",
+      "emphasis": [
+        "1년짜리"
+      ],
+      "visual": "a calendar page showing one year with an hourglass running out, red tint"
+    },
+    {
+      "id": "s07",
+      "text": "그래서 두 회사 주가는 하루 만에 3% 넘게 빠졌죠.",
+      "speaker": "main",
+      "asset": "assets/s07.jpg",
+      "emphasis": [
+        "3%"
+      ],
+      "visual": "stock market screen with red falling candles, trader silhouette, panic"
+    },
+    {
+      "id": "s08",
+      "text": "정리하면, 엔비디아가 커질수록 한국이 버는 돈도 커지는데, 그 길목을 미국이 쥐고 있다는 겁니다.",
+      "speaker": "main",
+      "asset": "assets/s08.jpg",
+      "emphasis": [
+        "길목"
+      ],
+      "visual": "a long highway bottleneck with a single gate held by a giant hand, Korea and US flags, metaphorical"
+    }
+  ]
+}
